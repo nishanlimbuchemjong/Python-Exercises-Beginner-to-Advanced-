@@ -1,22 +1,14 @@
 """
-Implement a program to check if two given integers are equal, not equal, or one is greater than the other using relational operators.
+Write a program to compute the compound interest using mathematical operators.
 """
-# initializing the values of x and y
-x, y = 50, 60
+def calculate_simple_interest(p, t, r):
+    return (p * t * r) / 100
 
+principle = 145000  # rs 
+rate = 5    # percentage
+time = 2    # year
 
-print(f"x = {x} and y = {y}\nResults:")
+result = calculate_simple_interest(principle, rate, time)
 
-# checking the different conditions
-if x == y:
-    print("x is equal to y")
-elif x != y:
-    print("x is not equal to y")
-    print("Also,")
-    if x > y:
-        print("x is greater to y")
-    else:
-        print("y is greater to x")
-else:
-    pass
-
+print(f"Priciple: Rs. {principle}\nRate = {rate}%\nTime = {time} years")
+print(f"\nSimple Interest = Rs. {result}/-")
