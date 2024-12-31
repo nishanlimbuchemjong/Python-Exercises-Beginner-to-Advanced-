@@ -27,7 +27,7 @@ t = (5, 1, 2, 5, 5, 3, 2)
 # initializing the value of c'ount' variable
 count = 0
 for i in range(len(t)):
-    if t[i] == 5 in t:
+    if t[i] == 5:
         count += 1
     
 print(f"Total count of 5 in tuple t= {t} is {count}")

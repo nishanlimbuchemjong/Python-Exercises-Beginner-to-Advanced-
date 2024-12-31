@@ -50,7 +50,7 @@ print("```````````````````````````````````````````````\n")
 print("Question-3: Set Comprehension\n")
 
 # set comprehension for generating set of squares between 1 to 10
-square_set = set([i**2 for i in range(1, 10+1)])
+square_set = {i**2 for i in range(1, 10+1)}
 
 # printing the result
 print(f"Required set = {square_set}")

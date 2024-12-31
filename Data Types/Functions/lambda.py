@@ -2,9 +2,18 @@
 Performing different arithmetic operations using 'Lambda' function
 """
 
-num1 = int(input("Enter first number: "))
-num2 = int(input("Enter second number: "))
-num3 = int(input("Enter third number: "))
+# function to validate and get interger number 
+def get_valid_number(values_entered):
+    while True:
+        try:
+            return int(input(values_entered))
+        except ValueError:
+            print("\nInvalid input! Please enter a valid integer.\n")
+
+# taking validated input from users
+num1 = get_valid_number("Enter first number: ")
+num2 = get_valid_number("Enter second number: ")
+num3 = get_valid_number("Enter third number: ")
 
 # printing users entered numbers
 print(f"\nYour entered numbers:Number-1 = {num1}\nNumber-2 = {num2}\nNumber-3 = {num3}\n")

@@ -58,11 +58,8 @@ for i in range(len(nums)):
     if apppear_num in nums:
         if nums[i] == apppear_num:
             count += 1
-        else:
-            pass
-    else:
-        pass
 
+# printing the result
 print(f"Given list = {nums}\n")
 print(f"Result:\n\tTotal Occurrences of {apppear_num} = {count}")
 print("```````````````````````````````````````````````````````````\n")
