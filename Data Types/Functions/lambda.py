@@ -1,0 +1,21 @@
+"""
+Performing different arithmetic operations using 'Lambda' function
+"""
+
+num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))
+num3 = int(input("Enter third number: "))
+
+# printing users entered numbers
+print(f"\nYour entered numbers:Number-1 = {num1}\nNumber-2 = {num2}\nNumber-3 = {num3}\n")
+
+# finding all the arithmetic operations using lambda
+addition = lambda a, b, c: a + b + c
+multiplication = lambda a, b, c: a * b * c
+sum_square_of_numbers = lambda a, b, c: a**2 + b**2 + c**2
+
+# printing the results of all arithmetic operations
+print("Result:\n")
+print(f"Addition = {addition(num1, num2, num3)}")
+print(f"Multiplication = {multiplication(num1, num2, num3)}")
+print(f"Sum of Squares = {sum_square_of_numbers(num1, num2, num3)}")
