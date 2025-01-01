@@ -23,3 +23,13 @@ smallest_num = min(number_list)
 print(f"Largest number: {largest_num}")
 print(f"Smallest number: {smallest_num}")
 print("................................................................\n")
+
+# Q.3) Reverse a list without using the `reverse()` method.
+print("Question-3: \n")
+
+number_list = [13, 43, 56, 34, 2, 4, 30, 22, 45, 77, 75]
+
+print(f"Reverse of the given list {number_list} is {number_list[::-1]}")
+
+print("................................................................\n")
+
