@@ -13,3 +13,15 @@ print(last_element)
 print(f"Before swapping the first and last element of a tuple, we get\n\t{subjects}")
 print(f"After swapping the first and last element of a tuple, we get\n\t{tuple(subjects_list)}")
 print(".................................................................\n")
+
+
+# Q.2) Unpack the tuple `(10, 20, 30, 40)` into four variables and print them.
+print("Question-2:")
+a, b, c, d = (10, 20, 30, 40)
+
+print("After upacking the tuple (10, 20, 30, 40), we get")
+print(f" a = {a}")
+print(f" b = {b}")
+print(f" c = {c}")
+print(f" d = {d}")
+print(".......................................\n")
