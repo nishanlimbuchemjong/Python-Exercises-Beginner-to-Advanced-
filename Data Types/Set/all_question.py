@@ -33,3 +33,15 @@ if result == True:
 else:
     print("\tNo, Domestic set is the subset of Animal set")
 print("............................................................................\n")
+
+# Q.4) Write a program to find the symmetric difference between two sets.
+print("Question-4:\n")
+
+domestic_animal_set = {"Dog", "Cow", "Donkey", "Horse", "Buffalo"}
+animal_set = {"Lion", "Leopard", "Dog", "Giraffe", "Cow", "Tiger", "Donkey", "Horse", "Buffalo"}
+
+result = domestic_animal_set.symmetric_difference(animal_set)
+
+print(f"Sets:\nDomestic Set = {domestic_animal_set}\nAnimal Set = {animal_set}\nResult:")
+print(f"Symmbertic Difference between two sets = {result}")
+print(".................................................\n")
