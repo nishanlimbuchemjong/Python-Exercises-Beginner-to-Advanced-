@@ -45,3 +45,11 @@ result = domestic_animal_set.symmetric_difference(animal_set)
 print(f"Sets:\nDomestic Set = {domestic_animal_set}\nAnimal Set = {animal_set}\nResult:")
 print(f"Symmbertic Difference between two sets = {result}")
 print(".................................................\n")
+
+# Q.5) Create a set of unique characters from a string.
+print("Question-5: \n")
+sentence = "My name is Nishan Limbu"
+character_set = set(sentence)
+
+print(f"Set of unique characters from a string {sentence} is given below: \n\t{character_set}")
+print("..........................................................................\n")
