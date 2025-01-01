@@ -35,3 +35,13 @@ print("\nConverting list into a tuple and vice versa:")
 print(f"List = {number_list}")
 print(f"Tuple = {number_tuple}")
 print("............................................\n")
+
+# Q.4) Write a program to concatenate two tuples
+print("Question-4:\n")
+tuple_number = (1, 2, 3, 4, 5, 6)
+tuple_letters = ('a', 'b', 'c', 'd', 'e', 'f')
+
+concatinate_tuple = tuple_number + tuple_letters
+print(f"Tuple of a number = {tuple_number}\nTuple of letters = {tuple_letters}")
+print(f"\nAfter concatening, \n\tTuple is {concatinate_tuple}")
+print("..............................................................\n")
