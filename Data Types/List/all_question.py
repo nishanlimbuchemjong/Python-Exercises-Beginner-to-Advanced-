@@ -39,7 +39,7 @@ print("Question-4: \n")
 number_list = [33, 43, 56, 33, 22, 43, 30, 22, 45, 75, 75]
 
 final_list = sorted(list(set(number_list)))
-print(f"After removing duplicates from a list while maintianing the oreder. \n\tRequired List = {final_list}")
+print(f"After removing duplicates from a list while maintianing the order. \n\tRequired List = {final_list}")
 print("................................................................\n")
 
 
