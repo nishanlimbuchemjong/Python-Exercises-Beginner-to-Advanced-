@@ -45,3 +45,14 @@ concatinate_tuple = tuple_number + tuple_letters
 print(f"Tuple of a number = {tuple_number}\nTuple of letters = {tuple_letters}")
 print(f"\nAfter concatening, \n\tTuple is {concatinate_tuple}")
 print("..............................................................\n")
+
+# Q.5) Find the index of a specific element in a tuple.
+print("Question-5: \n")
+
+mixed_tuple = (1, 2, 3, 4, 5, 6, 'a', 'b', 'c', 'd', 'e', 'f')
+
+print("\nAccessing the index of different element in a tuple:\n")
+print(f"Index of 3 = {mixed_tuple.index(3)}")
+print(f"Index of 'a' = {mixed_tuple.index('a')}")
+print(f"Index of 'f' = {mixed_tuple.index('f')}")
+print("......................................................\n")
