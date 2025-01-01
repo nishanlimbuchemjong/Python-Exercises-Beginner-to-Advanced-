@@ -33,3 +33,12 @@ print(f"Reverse of the given list {number_list} is {number_list[::-1]}")
 
 print("................................................................\n")
 
+# Q.4) Remove duplicates from a list while maintaining the order.
+print("Question-4: \n")
+
+number_list = [33, 43, 56, 33, 22, 43, 30, 22, 45, 75, 75]
+
+final_list = sorted(list(set(number_list)))
+print(f"After removing duplicates from a list while maintianing the oreder. \n\tRequired List = {final_list}")
+print("................................................................\n")
+
