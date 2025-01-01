@@ -16,7 +16,7 @@ print(".................................................................\n")
 
 
 # Q.2) Unpack the tuple `(10, 20, 30, 40)` into four variables and print them.
-print("Question-2:")
+print("Question-2:\n")
 a, b, c, d = (10, 20, 30, 40)
 
 print("After upacking the tuple (10, 20, 30, 40), we get")
@@ -25,3 +25,13 @@ print(f" b = {b}")
 print(f" c = {c}")
 print(f" d = {d}")
 print(".......................................\n")
+
+# Q.3) Convert a list into a tuple and vice versa.
+print("Question-3: \n")
+
+number_list = [13, 43, 56, 34, 2, 4, 30, 22, 45, 77, 75]
+number_tuple = tuple(number_list)
+print("\nConverting list into a tuple and vice versa:")
+print(f"List = {number_list}")
+print(f"Tuple = {number_tuple}")
+print("............................................\n")
