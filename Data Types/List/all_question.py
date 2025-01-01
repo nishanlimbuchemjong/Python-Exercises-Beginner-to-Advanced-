@@ -42,3 +42,11 @@ final_list = sorted(list(set(number_list)))
 print(f"After removing duplicates from a list while maintianing the oreder. \n\tRequired List = {final_list}")
 print("................................................................\n")
 
+
+# Q.5) Write a list comprehension to create a list of squares for numbers 1 to 10.
+print("Question-5: \n")
+
+square_list = [x*x for x in range(1, 11)]
+
+print(f"Squared List of numbers from 1 to 10 is {square_list}")
+print("................................................................\n")
