@@ -18,3 +18,18 @@ number_set = set(number_list)
 print(f"Before converting the list into set, \nList = {number_list}")
 print(f"After removing all duplicates from a list, we get\n\t{number_set}")
 print(".............................................................\n")
+
+# Q.3) Check if a set is a subset of another set.
+print("Question-3: \n")
+
+domestic_animal_set = {"Dog", "Cow", "Donkey", "Horse", "Buffalo"}
+animal_set = {"Lion", "Leopard", "Dog", "Giraffe", "Cow", "Tiger", "Donkey", "Horse", "Buffalo"}
+
+result = domestic_animal_set.issubset(animal_set)
+
+print(f"Sets:\nDomestic Set = {domestic_animal_set}\nAnimal Set = {animal_set}\nResult:")
+if result == True:
+    print("\tYes, Domestic set is the subset of Animal set")
+else:
+    print("\tNo, Domestic set is the subset of Animal set")
+print("............................................................................\n")
