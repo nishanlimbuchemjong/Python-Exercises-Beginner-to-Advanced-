@@ -11,3 +11,15 @@ for i in range(1, 21):
 # printing out the list
 print(f"List: {even_list}")
 print("................................................................\n")
+
+
+# Q.2) Write a program to find the largest and smallest numbers in a list.
+print("Question-2: \n")
+number_list = [13, 43, 56, 34, 2, 4, 30, 22, 45, 77, 75]
+
+largest_num = max(number_list)
+smallest_num = min(number_list)
+
+print(f"Largest number: {largest_num}")
+print(f"Smallest number: {smallest_num}")
+print("................................................................\n")
