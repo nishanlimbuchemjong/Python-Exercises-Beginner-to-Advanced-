@@ -16,3 +16,16 @@ number_dict.update(fav_sub_dict)
 print(f"Number Dictionary = {number_dict}\nFavourite Subject Dictionary = {fav_sub_dict}")
 print(f"\nAfter merging two dictionaries, we get \n\t{number_dict}")
 print("...............................................................\n")
+
+# Q.3) Count the frequency of each character in a string using a dictionary.
+print("Question-3:\n")
+
+sentences = "My name is Nishan Limbu. I am studying BCA in Araniko Multiple Campus"
+list_sentences = list(sentences)
+
+freq = [list_sentences.count(i) for i in list_sentences]
+character_dict = dict(zip(list_sentences, freq))
+
+print(f"The sentence is {sentences}")
+print(f"\nRequired Dicitonary after counting the frequenct of each character in a string: \n{character_dict}")
+print("...............................................................\n")
