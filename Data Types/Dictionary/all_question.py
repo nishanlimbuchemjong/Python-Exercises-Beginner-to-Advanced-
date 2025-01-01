@@ -29,3 +29,27 @@ character_dict = dict(zip(list_sentences, freq))
 print(f"The sentence is {sentences}")
 print(f"\nRequired Dicitonary after counting the frequenct of each character in a string: \n{character_dict}")
 print("...............................................................\n")
+
+# Q.4) Sort a dictionary by its keys.
+print("Question-4:\n")
+
+info_dict = {'Name': 'Nishan', 'Grade': 'BCA 7th Sem', 'Books': ['Science', 'Mathematics', 'Optional Math']}
+
+result = sorted(info_dict.keys())
+
+print(f"Dicitonary = {info_dict}")
+print(f"Sorted by its, we get\n\t{result}")
+print("..............................................................\n")
+
+# Q.5) Write a program to find the maximum and minimum value in a dictionary
+print("Question-5:\n")
+
+data = {"a": 10, "b": 25, "c": 5, "d": 15, "e": 22}
+
+maximum = max(data.values())
+minimum = min(data.values())
+
+print(f"Dictionary: {data}\nResult: \n")
+print(f"\tMinimum value = {minimum}")
+print(f"\tMaximum value = {maximum}")
+print("...................................\n")    
