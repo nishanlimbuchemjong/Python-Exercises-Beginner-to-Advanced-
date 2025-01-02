@@ -270,3 +270,26 @@ result = celsius_to_fahrenheit(user_degree)
 
 print("\nResult:")
 print(f"\tFahrenheit = {result}")
+
+print("................................................................\n")
+
+
+# Q.20) Write a function that flattens a nested list into a single-level list
+print("Question-20:\n")
+
+def flattens_list(lst):
+    new_lst = []
+    for i in lst:
+        new_lst.extend(i)
+    return new_lst
+
+matrix = [
+    [9, 3, 8, 3],
+    [4, 5, 2, 8],
+    [6, 4, 3, 1],
+    [1, 0, 4, 5],
+]
+
+result = flattens_list(matrix)
+print(f"After flattening a nested list into single-level list i.e. {matrix}, we get\n\t{result}")
+print("................................................................\n")
