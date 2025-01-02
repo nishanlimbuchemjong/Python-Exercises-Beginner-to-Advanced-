@@ -81,7 +81,7 @@ result = list_of_keys(personal_info)
 print(f"List of all keys in dictionary {personal_info} is given below:\n{result}")
 print("..............................................\n")
 
-# Q.6) Create a function that takes a string and returns the string with all vowels removed.
+# Q.7) Create a function that takes a string and returns the string with all vowels removed.
 
 def vowels_removal(sentence):
     vowels_letters = ['a', 'e', 'i', 'o', 'u']
@@ -97,4 +97,51 @@ result = vowels_removal(sentences)
 print(f"After removing vowels from {sentences}, we get\n\t")
 for i in result:
     print(i, end=(""))
+
+print("\n..............................................\n")
+
+
+# Q.8) Write a function that takes a list of strings and returns the longest string in the list.
+def longest_string(sentences_list):
+    char_count_list = []
+    for i in sentences_list:
+        char_count_list.append(len(i))
+
+    max_index = char_count_list.index(max(char_count_list))
+    return sentences_list[max_index]
+
+sentences_list = ['Nishan Limbu', 'Numa Limbu', 'Anu Limbu', 'Dipa Limbu']
+
+result = longest_string(sentences_list)
+print(f"Lonest string in a given list {sentences_list} is {result}")
+print("................................................................\n")
+
+
+# Q.9) Implement a function that takes a string and counts how many times each character appears in it
+
+def counting_characters(sentences):
+    sentence_dict = {}
+    for i in sentences:
+        sentence_dict[i] = sentence_dict.get(i, 0) + 1
+    return sentence_dict
+
+sentences = "NishanddddssNN"
+result = counting_characters(sentences)
+print(result)
+print("................................................................\n")
+
+# Q.10) Write a function that accepts a list and returns a new list with duplicate elements removed
+print("Question-10:")
+def duplicate_remove(given_list):
+    new_list = []
+
+    for i in given_list:
+        if i not in new_list:
+            new_list.append(i)
+    return new_list
+        
+user_list = [1, 5, 6, 5, 5, 5, 1, 2, 3, 6, 7, 7]
+result = duplicate_remove(user_list)
+print(result)
+print("................................................................\n")
 
