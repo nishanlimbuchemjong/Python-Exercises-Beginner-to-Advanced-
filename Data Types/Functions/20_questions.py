@@ -52,3 +52,49 @@ list_num = [109, 22, 34, 42, 55]
 result = largest_element(list_num)
 print(f"Largest element of a  list {list_num} = {result}")
 print("..............................................\n")
+
+
+# Q.5) Implement a function that calculates the sum of all even numbers in a given range.
+
+def sum_of_even(size):
+    sum = 0
+    for i in range(1, size+1):
+        if i % 2 == 0:
+            sum += i
+    return sum
+
+num = 10
+result = sum_of_even(num)
+print(f"Sum of even number upto {num} = {result}")
+print("..............................................\n")
+
+# Q.6) Write a function that takes a dictionary and returns a list of its keys.
+def list_of_keys(dictionary):
+    return [x for x in dictionary.keys()]
+
+personal_info = {
+    "Name": "Nishan Limbu",
+    "Grade": "BCA 7th sem"
+}
+
+result = list_of_keys(personal_info)
+print(f"List of all keys in dictionary {personal_info} is given below:\n{result}")
+print("..............................................\n")
+
+# Q.6) Create a function that takes a string and returns the string with all vowels removed.
+
+def vowels_removal(sentence):
+    vowels_letters = ['a', 'e', 'i', 'o', 'u']
+    sentence_list = list(sentence)
+    for i in sentence_list:
+        if i == 'a' or i == 'e' or i =='i' or i == 'o' or i == 'u':
+            sentence_list.remove(i)
+
+    return sentence_list
+
+sentences = "Nishan Limbu"
+result = vowels_removal(sentences)
+print(f"After removing vowels from {sentences}, we get\n\t")
+for i in result:
+    print(i, end=(""))
+
