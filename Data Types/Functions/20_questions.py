@@ -254,3 +254,19 @@ num2 = 20
 result = greatest_common_divisor(num1, num2)
 print(f"The GDC of {num1} and {num2} is {result}")
 print("................................................................\n")
+
+# Q.18) Implement a function that generates all permutations of a given string.
+
+
+# Q.19) Define a function that converts a given temperature from Celsius to Fahrenheit
+print("Question-19: \n")
+
+def celsius_to_fahrenheit(degree):
+    return degree * (9 / 5) + 32
+
+user_degree = 100
+
+result = celsius_to_fahrenheit(user_degree)
+
+print("\nResult:")
+print(f"\tFahrenheit = {result}")
