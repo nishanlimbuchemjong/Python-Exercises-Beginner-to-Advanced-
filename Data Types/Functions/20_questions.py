@@ -222,3 +222,35 @@ sentence = "My name is Nishan Limbu"
 result = words_number(sentence)
 print(f"Total words in '{sentence}' is {result}")
 print("................................................................\n")
+
+# Q.16) Create a function that accepts a list of tuples and sorts them based on the second element of each tuple
+print("Question-16: \n")
+
+def sorted_list(lst):
+    return sorted(lst, key=lambda x: x[1])
+lst = [(11, 2454, 3, 4, 5), (6, 73, 8, 9, 10), (11, 123, 13, 14, 15)]
+result = sorted_list(lst)
+print(result)
+print("................................................................\n")
+
+
+# Q.17) Write a function that calculates the greatest common divisor (GCD) of two numbers.
+print('Question-17: \n')
+
+def greatest_common_divisor(num1, num2):
+    factors = []
+    if num1> num2:
+        size = num1
+    else:
+        size = num2
+    for i in range(1, size+1):
+        if num1 % i == 0 and num2 % i == 0:
+            factors.append(i)
+    gcd = max(factors)
+    return gcd
+
+num1 = 10
+num2 = 20
+result = greatest_common_divisor(num1, num2)
+print(f"The GDC of {num1} and {num2} is {result}")
+print("................................................................\n")
