@@ -21,14 +21,14 @@ class Book:
     def add_books(self, book_name, price):
         new_book = Library(book_name, price)
         self.books.append(new_book)
-        print("\nBook added successfully!!\n")
+        print(f"\n'{new_book.book_name}' book added successfully!!\n")
 
     # method to delete books from books list
     def delete_books(self, book_name):
         for i in self.books:
-            if book_name in self.books:
-                self.books.remove(book_name)
-        print(f"{book_name} deleted successfully")
+            if i.book_name == book_name:
+                self.books.remove(i)
+        print(f"'{book_name}' book deleted successfully!!")
 
 # function that validates the integer number
 def get_interger_number(prompt):
